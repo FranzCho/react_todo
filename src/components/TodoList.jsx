@@ -1,6 +1,6 @@
-import React from 'react'
-import styled from 'styled-components'
-import TodoItem from './TodoItem'
+import React from 'react';
+import styled from 'styled-components';
+import TodoItem from './TodoItem';
 import { useTodoState } from '../TodoContext';
 
 const TodoListBlock = styled.div`
@@ -12,6 +12,7 @@ const TodoListBlock = styled.div`
 
 function TodoList() {
   const todos = useTodoState();
+
   return (
     <TodoListBlock>
       {todos.map(todo => (
@@ -23,7 +24,7 @@ function TodoList() {
         />
       ))}
     </TodoListBlock>
-  )
+  );
 }
 
-export default TodoList
+export default TodoList;
